@@ -10,7 +10,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Van | Portofolio",
-  description: "Van is Wev Developer"
+  description:
+    "“Van is a web developer who just started his career journey 6 months ago. Currently, he is pursuing higher education as a student at Politeknik Negeri Lampung.”"
 };
 
 export default function RootLayout({
