@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "VanTech | Portofolio",
+  title: "Van | Portofolio",
   description: "Van is Wev Developer"
 };
 
