@@ -21,7 +21,7 @@ const Intro = () => {
             height="1080"
             quality="95"
             priority={true}
-            className="h-[8rem] w-[8rem] rounded-full bg-color-ascent  border-[0.35rem]"
+            className="h-[7rem] w-[7rem] rounded-full bg-color-ascent  border-[0.35rem]"
           />
         </motion.div>
       </div>
@@ -53,21 +53,24 @@ const Intro = () => {
         }}>
         <div className="flex flex-row gap-2">
           <a
-            href=""
-            className="bg-color-dark text-color-primary px-4 py-4 flex items-center gap-2 rounded-full hover:scale-110 active:scale-105 transition">
-            <BsLinkedin width={26} color="white" />
+            href="https://www.linkedin.com/in/van29/"
+            target="_blank"
+            className="bg-color-dark text-color-primary px-4 py-4 flex items-center gap-2 rounded-full hover:scale-105 active:scale-105 transition">
+            <BsLinkedin width={28} color="white" />
           </a>
           <a
-            href=""
-            className="bg-color-dark text-color-primary px-4 py-4 flex items-center gap-2 rounded-full hover:scale-110 active:scale-105 transition">
-            <BsGithub width={26} color="white" />
+            href="https://github.com/kisa22"
+            target="_blank"
+            className="bg-color-dark text-color-primary px-4 py-4 flex items-center gap-2 rounded-full hover:scale-105 active:scale-105 transition">
+            <BsGithub width={28} color="white" />
           </a>
-          <Link
-            href="#contact"
-            className="bg-color-dark text-color-primary px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 active:scale-105 transition">
-            Contact Me <BsArrowRight className="bold-icon" width={22} />
-          </Link>
         </div>
+        <Link
+          href="#contact"
+          className="group bg-color-dark text-color-primary px-7 py-3 flex items-center gap-2 rounded-full hover:scale-105 active:scale-105 transition">
+          Contact Me{" "}
+          <BsArrowRight className="bold-icon group-hover:translate-x-1 transition" width={22} />
+        </Link>
       </motion.div>
       <div className="flex items-center justify-center flex-col gap-2">
         <motion.p
@@ -92,9 +95,10 @@ const Intro = () => {
           stiffness: 100
         }}>
         <a
-          href=""
-          className="bg-color-primary text-color-darker px-5 py-3 flex items-center gap-2 rounded-full hover:scale-110 active:scale-105 transition">
-          Download CV <HiDownload width={22} />
+          download
+          href="/public/CV.pdf"
+          className="bg-color-primary text-color-darker px-5 py-3 flex items-center gap-2 rounded-full hover:scale-105 active:scale-105 transition">
+          Download CV <HiDownload width={22} className="animate-bounce" />
         </a>
       </motion.div>
     </section>

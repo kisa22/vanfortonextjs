@@ -23,7 +23,15 @@ const config: Config = {
         ascent: "#4A5C6A",
         alter: "#253745",
         dark: "#11212D",
-        darker: "#06141B"
+        darker: "#06141B",
+        gray: {
+          100: "#CCD0CF",
+          200: "#9BA8AB",
+          300: "#4A5C6A",
+          400: "#253745",
+          500: "#11212D",
+          600: "#06141B"
+        }
       }
     }
   },

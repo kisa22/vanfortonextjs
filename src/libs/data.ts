@@ -2,6 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import AnimeList from "@/public/animelist.png";
+import TodoList from "@/public/todolist.png";
 
 export const links = [
   {
@@ -32,28 +34,27 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Machine Learning",
+    location: "Dicoding",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 6 months of studying. I successfully completed the final assignment given by the bootcamp in completing the data training program to determine the shape of a hand, (Scissors, Stone, Paper)",
     icon: React.createElement(LuGraduationCap),
-    date: "2019"
+    date: "2024"
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Aws Cloud",
+    location: "Dicoding",
+    description: "I managed to follow the Aws Cloud lesson from the dicoding bootcamp.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021"
+    date: "2024"
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "IT Skill Booster",
+    location: "Pijar Camp",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I followed the learning of php language with laravel framework from Pijar Camp, I understood the fundamental basis of php language from the learning I got from Pijar Camp.",
     icon: React.createElement(FaReact),
-    date: "2021 - present"
+    date: "2024"
   }
 ] as const;
 
@@ -62,13 +63,13 @@ export const projectsData = [
     title: "Anime List",
     description: "I remake anime list with my own style.",
     tags: ["React", "Next.js", "Supabase", "Tailwind", "Prisma"],
-    imageUrl: null
+    imageUrl: AnimeList
   },
   {
     title: "Todo List",
     description: "Todo List with some extras functionality",
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
-    imageUrl: null
+    imageUrl: TodoList
   }
 ] as const;
 
