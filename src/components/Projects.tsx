@@ -6,7 +6,9 @@ import React from "react";
 const Projects = () => {
   return (
     <section className="text-color-primary">
-      <SectionHeading HeadText={"Projects"} />
+      <div className="flex text-center justify-center items-center">
+        <SectionHeading>Projects</SectionHeading>
+      </div>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
@@ -22,11 +24,11 @@ type ProjectProps = (typeof projectsData)[number];
 
 const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
   return (
-    <section className="bg-color-gray-100 max-w-[42rem] border border-color-darker/5 overflow-hidden sm:pr-8 text-color-darker relative sm:h-[22rem]">
-      <div className="py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%]">
+    <section className="bg-color-gray-100 max-w-[42rem] border border-color-darker/5 overflow-hidden sm:pr-8 text-color-darker relative sm:h-[22rem] mb-3 sm:mb-8 last:mb-0 rounded-sm shadow-xl">
+      <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-2 leading-relaxed">{description}</p>
-        <ul className="flex flex-wrap mt-4 gap-2">
+        <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
           {tags.map((tag, index) => (
             <li
               key={index}

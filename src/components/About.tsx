@@ -10,7 +10,7 @@ const About = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 2, type: "spring", stiffness: 100 }}>
-      <SectionHeading HeadText={"About Me"} />
+      <SectionHeading>About</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in <span className="font-medium">Informatic Manajement</span>
         , I decided to pursue my passion for programming. I enrolled in a coding bootcamp and

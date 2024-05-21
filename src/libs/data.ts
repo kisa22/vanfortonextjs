@@ -61,13 +61,15 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Anime List",
-    description: "I remake anime list with my own style.",
+    description:
+      "I redesigned my anime list using Prisma and JSX to efficiently manage the lists and enhance usability. For the database, I integrated Supabase, and I styled the interface with Tailwind CSS.",
     tags: ["React", "Next.js", "Supabase", "Tailwind", "Prisma"],
     imageUrl: AnimeList
   },
   {
     title: "Todo List",
-    description: "Todo List with some extras functionality",
+    description:
+      "I developed a web application for managing daily to-do lists, incorporating various features to enhance productivity and meet everyday needs.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     imageUrl: TodoList
   }
