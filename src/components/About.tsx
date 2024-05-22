@@ -6,10 +6,11 @@ import SectionHeading from "@/components/SectionHeading";
 const About = () => {
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 text-color-primary"
+      className="mb-28 max-w-[45rem] text-center leading-8 text-color-primary scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.3, duration: 2, type: "spring", stiffness: 100 }}>
+      transition={{ delay: 0.3, duration: 2, type: "spring", stiffness: 100 }}
+      id="about">
       <SectionHeading>About</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in <span className="font-medium">Informatic Manajement</span>

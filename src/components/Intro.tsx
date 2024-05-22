@@ -8,7 +8,7 @@ import { HiDownload } from "react-icons/hi";
 
 const Intro = () => {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section id="home" className="scroll-mt-28 mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex justify-center items-center mb-8">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
