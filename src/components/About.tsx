@@ -2,11 +2,26 @@
 
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
+import { useEffect } from "react";
 
 const About = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.75
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView]);
+
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 text-color-primary scroll-mt-28"
+      ref={ref}
+      className="mb-28 max-w-[42rem] text-center leading-8 text-color-primary scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 2, type: "spring", stiffness: 100 }}

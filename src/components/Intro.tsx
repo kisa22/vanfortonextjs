@@ -5,10 +5,23 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
+import { useEffect } from "react";
 
 const Intro = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView]);
   return (
-    <section id="home" className="scroll-mt-28 mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section ref={ref} id="home" className="scroll-mt-28 mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex justify-center items-center mb-8">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
