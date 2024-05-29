@@ -49,7 +49,6 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
           alt={title}
           quality={95}
           className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-48 group-hover:-translate-x-3 group-hover:translate-y-3 transition group-hover:-rotate-2 group-hover:scale-[1.07]
-
         group-even:group-hover:translate-x-3 
         group-even:group-hover:translate-y-3 
         group-even:group-hover:rotate-2

@@ -11,6 +11,10 @@
   }
 }
 
+html {
+  --line-color: #ccd0cf;
+}
+
 .bonrig {
   animation-name: bounce-right;
   animation-duration: 1s;

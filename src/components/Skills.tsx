@@ -26,7 +26,13 @@ const fadeInAnimation = {
 const Skills = () => {
   const { ref } = useSectionView("Skills");
   return (
-    <section id="skills" ref={ref} className="mb-28 max-w[53rem] scroll-mt-28 text-center sm:mb-40">
+    <motion.section
+      id="skills"
+      ref={ref}
+      className="mb-28 max-w[53rem] scroll-mt-28 text-center sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.4, duration: 2, type: "spring", stiffness: 100 }}>
       <SectionHeading>My Skills</SectionHeading>
       <ul className="text-color-darker flex flex-wrap justify-center gap-2 text-lg max-w-[53rem]">
         {skillsData.map((skill, index) => (
@@ -44,7 +50,7 @@ const Skills = () => {
           </motion.li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 };
 

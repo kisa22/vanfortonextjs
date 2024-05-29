@@ -3,6 +3,7 @@ import Intro from "@/components/Intro";
 import SectionDivider from "@/components/SectionDivider";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const Page = () => {
   return (
@@ -13,6 +14,7 @@ const Page = () => {
         <About />
         <Projects />
         <Skills />
+        <Experience />
       </main>
     </>
   );

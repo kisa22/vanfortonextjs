@@ -9,7 +9,6 @@ const Projects = () => {
   const { ref } = useSectionView("Projects", 0.5);
   return (
     <section id="projects" ref={ref} className="text-color-primary mb-28 scroll-mt-[12rem]">
-      {/* <SectionHeading>My Projects</SectionHeading> */}
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
