@@ -2,26 +2,14 @@
 
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/context/ActiveSectionContext";
-import { useEffect } from "react";
+import useSectionView from "@/libs/hooks";
 
 const About = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.75
-  });
-  const { setActiveSection } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("About");
-    }
-  }, [inView]);
-
+  const { ref } = useSectionView("About", 0.75);
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[42rem] text-center leading-8 text-color-primary scroll-mt-28"
+      className="max-w-[42rem] text-center leading-8 text-color-primary scroll-mt-32"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 2, type: "spring", stiffness: 100 }}
@@ -44,6 +32,13 @@ const About = () => {
         <span className="font-medium">music and philosophy</span>. I'm also learning how to play the
         piano.
       </p>
+      <motion.div
+        className="mt-28"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.34, duration: 3, type: "spring", stiffness: 100 }}>
+        <SectionHeading>My Projects</SectionHeading>
+      </motion.div>
     </motion.section>
   );
 };
