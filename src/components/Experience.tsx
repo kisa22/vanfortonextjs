@@ -8,7 +8,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
-  const { ref } = useSectionView("Experience", 0.4);
+  const { ref } = useSectionView("Experience");
 
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
@@ -18,7 +18,7 @@ const Experience = () => {
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                background: "#f3f4f6",
+                background: "#CCD0CF",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.5)",
                 textAlign: "left",
