@@ -1,7 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { CgDatabase } from "react-icons/cg";
+import { FaLaravel } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 import AnimeList from "@/public/animelist.png";
 import TodoList from "@/public/todolist.png";
 
@@ -38,14 +38,14 @@ export const experiencesData = [
     location: "Dicoding",
     description:
       "I graduated after 6 months of studying. I successfully completed the final assignment given by the bootcamp in completing the data training program to determine the shape of a hand, (Scissors, Stone, Paper)",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(FaPython),
     date: "2024"
   },
   {
     title: "Aws Cloud",
     location: "Dicoding",
     description: "I managed to follow the Aws Cloud lesson from the dicoding bootcamp.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(CgDatabase),
     date: "2024"
   },
   {
@@ -53,7 +53,7 @@ export const experiencesData = [
     location: "Pijar Camp",
     description:
       "I followed the learning of php language with laravel framework from Pijar Camp, I understood the fundamental basis of php language from the learning I got from Pijar Camp.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(FaLaravel),
     date: "2024"
   }
 ] as const;
