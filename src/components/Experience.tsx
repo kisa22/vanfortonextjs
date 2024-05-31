@@ -17,6 +17,7 @@ const Experience = () => {
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              className="text-color-primary"
               contentStyle={{
                 background: "#CCD0CF",
                 boxShadow: "none",
