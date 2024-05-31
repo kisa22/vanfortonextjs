@@ -1,5 +1,5 @@
 import React from "react";
-import { CgDatabase } from "react-icons/cg";
+import { FaAws } from "react-icons/fa";
 import { TbBrandLaravel } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
 import AnimeList from "@/public/animelist.png";
@@ -45,7 +45,7 @@ export const experiencesData = [
     title: "Aws Cloud",
     location: "Dicoding",
     description: "I managed to follow the Aws Cloud lesson from the dicoding bootcamp.",
-    icon: React.createElement(CgDatabase),
+    icon: React.createElement(FaAws),
     date: "2024"
   },
   {
