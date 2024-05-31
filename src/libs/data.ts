@@ -1,6 +1,6 @@
 import React from "react";
 import { CgDatabase } from "react-icons/cg";
-import { FaLaravel } from "react-icons/fa";
+import { TbBrandLaravel } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
 import AnimeList from "@/public/animelist.png";
 import TodoList from "@/public/todolist.png";
@@ -53,7 +53,7 @@ export const experiencesData = [
     location: "Pijar Camp",
     description:
       "I followed the learning of php language with laravel framework from Pijar Camp, I understood the fundamental basis of php language from the learning I got from Pijar Camp.",
-    icon: React.createElement(FaLaravel),
+    icon: React.createElement(TbBrandLaravel),
     date: "2024"
   }
 ] as const;
