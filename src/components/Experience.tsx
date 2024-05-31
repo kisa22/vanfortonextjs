@@ -30,7 +30,7 @@ const Experience = () => {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background: "#9BA8AB",
+                background: "#CCD0CF",
                 fontSize: "1.5rem"
               }}>
               <h3 className="font-semibold capitalize">{item.title}</h3>
