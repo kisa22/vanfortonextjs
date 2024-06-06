@@ -6,9 +6,11 @@ import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import useSectionView from "@/libs/hooks";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 const Intro = () => {
   const { ref } = useSectionView("Home", 0.5);
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section ref={ref} id="home" className="scroll-mt-28 mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex justify-center items-center mb-8">
@@ -71,7 +73,14 @@ const Intro = () => {
           href="#contact"
           className="group bg-color-dark text-color-primary px-7 py-3 flex items-center gap-2 rounded-full hover:scale-105 active:scale-105 transition">
           Contact Me{" "}
-          <BsArrowRight className="bold-icon group-hover:translate-x-1 transition" width={22} />
+          <BsArrowRight
+            className="bold-icon group-hover:translate-x-1 transition"
+            width={22}
+            onClick={() => {
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
+          />
         </Link>
       </motion.div>
       <div className="flex items-center justify-center flex-col gap-2">
@@ -98,7 +107,7 @@ const Intro = () => {
         }}>
         <a
           download
-          href="/public/CV.pdf"
+          href="/CV.pdf"
           className="bg-color-primary text-color-darker px-5 py-3 flex items-center gap-2 rounded-full hover:scale-105 active:scale-105 transition">
           Download CV <HiDownload width={22} className="animate-bounce" />
         </a>

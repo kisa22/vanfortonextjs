@@ -27,3 +27,7 @@ html {
 .bold-icon {
   stroke-width: 0.8px;
 }
+
+.borderBlack {
+  @apply border border-color-darker/10;
+}
