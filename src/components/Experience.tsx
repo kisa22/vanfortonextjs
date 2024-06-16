@@ -27,7 +27,6 @@ const Experience = () => {
               contentArrowStyle={{
                 borderRight: "0.4rem solid #9ca3af"
               }}
-              dateClassName="text-color-primary"
               date={item.date}
               icon={item.icon}
               iconStyle={{
@@ -35,7 +34,9 @@ const Experience = () => {
                 fontSize: "1.5rem"
               }}>
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <p className="font-normal !mt-0">
+                {item.location}({item.date})
+              </p>
               <p className="!mt-1 !font-normal text-color-dark">{item.description}</p>
             </VerticalTimelineElement>
           </React.Fragment>
