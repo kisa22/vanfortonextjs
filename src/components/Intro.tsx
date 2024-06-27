@@ -19,7 +19,7 @@ const Intro = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "spring", duration: 0.3, stiffness: 100 }}>
           <Image
-            src="https://i.postimg.cc/3WMDKQxc/polospng.png"
+            src="https://i.postimg.cc/K8j8WV0W/polosjpg.png"
             alt="my pict"
             width="1080"
             height="1080"
